@@ -1,5 +1,5 @@
 # Coronavirus stats in the Vietnam from official source
-Gets an actual number of tested cases, number of confirmed cases and number of deaths by COVID-19 in the Vietnam from https://ncov.moh.gov.vn/.
+Gets an actual number of confirmed cases and number of deaths by COVID-19 in the Vietnam from https://ncov.moh.gov.vn/.
 
 Latest data are available at this URL: https://api.apify.com/v2/key-value-stores/EaCBL1JNntjR3EakU/records/LATEST?disableRedirect=true.
 
