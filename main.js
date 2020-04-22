@@ -57,9 +57,13 @@ Apify.main(async () => {
             }
 
             const died = $('.fivecolumns:nth-child(1) div:nth-child(5) span').text().trim();
+            const deceased = $('.fivecolumns:nth-child(1) div:nth-child(3) span').text().trim();
+            const recovered = $('.fivecolumns:nth-child(1) div:nth-child(4) span').text().trim();
             const confirmed = $('.fivecolumns:nth-child(1) div:nth-child(2) span').text().trim();
-            data.confirmedCases = parseInt(confirmed);
-            data.numberOfDeaths = parseInt(died);
+            data.confirmed = parseInt(confirmed);
+            data.deceased = parseInt(deceased);
+            data.recovered = parseInt(recovered);
+            data.deaths = parseInt(died);
 
             // Compare and save to history
             const latest = await kvStore.getValue(LATEST) || {};
